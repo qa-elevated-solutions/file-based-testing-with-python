@@ -1,0 +1,34 @@
+### TEST: Python Hello World
+DESCRIPTION: Test a simple Python print
+TYPE: exact
+TAGS: python, basic
+INPUT: print('Hello from Python')
+EXPECTED: Hello from Python
+
+### TEST: Python Math
+DESCRIPTION: Test Python calculation
+TYPE: exact
+TAGS: python, math
+INPUT: print(10 * 5)
+EXPECTED: 50
+
+### TEST: Python String Manipulation
+DESCRIPTION: Test string upper case
+TYPE: exact
+TAGS: python, string
+INPUT: print('hello world'.upper())
+EXPECTED: HELLO WORLD
+
+### TEST: Python List Length
+DESCRIPTION: Test list operations
+TYPE: exact
+TAGS: python, list
+INPUT: print(len([1, 2, 3, 4, 5]))
+EXPECTED: 5
+
+### TEST: Python Boolean
+DESCRIPTION: Test boolean expression
+TYPE: exact
+TAGS: python, logic
+INPUT: print(5 > 3)
+EXPECTED: True

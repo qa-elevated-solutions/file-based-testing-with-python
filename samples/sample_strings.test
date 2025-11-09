@@ -1,0 +1,48 @@
+### TEST: Echo Test
+DESCRIPTION: Test simple echo command
+TYPE: exact
+TAGS: string, basic
+INPUT: Hello World
+EXPECTED: Hello World
+
+### TEST: Echo Number
+DESCRIPTION: Echo a number
+TYPE: exact
+TAGS: string, basic
+INPUT: 42
+EXPECTED: 42
+
+### TEST: Contains Test
+DESCRIPTION: Test partial match
+TYPE: contains
+TAGS: string, partial
+INPUT: The quick brown fox jumps over the lazy dog
+EXPECTED: quick brown fox
+
+### TEST: Uppercase Test
+DESCRIPTION: Test uppercase conversion
+TYPE: contains
+TAGS: string, transform
+INPUT: hello
+EXPECTED: hello
+
+### TEST: JSON Test
+DESCRIPTION: Test JSON parsing
+TYPE: json
+TAGS: json, data
+INPUT: {"name": "test", "value": 123}
+EXPECTED: {"name": "test", "value": 123}
+
+### TEST: JSON Array Test
+DESCRIPTION: Test JSON array
+TYPE: json
+TAGS: json, array
+INPUT: [1, 2, 3, 4, 5]
+EXPECTED: [1, 2, 3, 4, 5]
+
+### TEST: Multi Word String
+DESCRIPTION: Test string with spaces
+TYPE: exact
+TAGS: string, spaces
+INPUT: This is a test string
+EXPECTED: This is a test string

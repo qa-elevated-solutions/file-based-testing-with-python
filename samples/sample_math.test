@@ -1,0 +1,34 @@
+### TEST: Addition Test
+DESCRIPTION: Test basic addition
+TYPE: exact
+TAGS: math, basic
+INPUT: 2+2
+EXPECTED: 4
+
+### TEST: Multiplication Test
+DESCRIPTION: Test multiplication
+TYPE: exact
+TAGS: math, basic
+INPUT: 5*3
+EXPECTED: 15
+
+### TEST: Division Test
+DESCRIPTION: Test division with decimal result
+TYPE: contains
+TAGS: math, decimal
+INPUT: 10/3
+EXPECTED: 3.3
+
+### TEST: Subtraction Test
+DESCRIPTION: Test subtraction
+TYPE: exact
+TAGS: math, basic
+INPUT: 100-42
+EXPECTED: 58
+
+### TEST: Power Test
+DESCRIPTION: Test exponentiation
+TYPE: exact
+TAGS: math, advanced
+INPUT: 2**10
+EXPECTED: 1024

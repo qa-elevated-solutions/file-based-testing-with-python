@@ -1,0 +1,132 @@
+### TEST: JSON Test
+DESCRIPTION: Test JSON parsing
+TYPE: json
+TAGS: json, data
+INPUT: {"name": "test", "value": 123}
+EXPECTED: {"name": "test", "value": 123}
+
+### TEST: JSON Array Test
+DESCRIPTION: Test JSON array
+TYPE: json
+TAGS: json, array
+INPUT: [1, 2, 3, 4, 5]
+EXPECTED: [1, 2, 3, 4, 5]
+
+### TEST: Addition Test
+DESCRIPTION: Test basic addition
+TYPE: exact
+TAGS: math, basic
+INPUT: 2+2
+EXPECTED: 4
+
+### TEST: Multiplication Test
+DESCRIPTION: Test multiplication
+TYPE: exact
+TAGS: math, basic
+INPUT: 5*3
+EXPECTED: 15
+
+### TEST: Division Test
+DESCRIPTION: Test division with decimal result
+TYPE: contains
+TAGS: math, decimal
+INPUT: 10/3
+EXPECTED: 3.3
+
+### TEST: Subtraction Test
+DESCRIPTION: Test subtraction
+TYPE: exact
+TAGS: math, basic
+INPUT: 100-42
+EXPECTED: 58
+
+### TEST: Power Test
+DESCRIPTION: Test exponentiation
+TYPE: exact
+TAGS: math, advanced
+INPUT: 2**10
+EXPECTED: 1024
+
+### TEST: Python Hello World
+DESCRIPTION: Test a simple Python print
+TYPE: exact
+TAGS: python, basic
+INPUT: print('Hello from Python')
+EXPECTED: Hello from Python
+
+### TEST: Python Math
+DESCRIPTION: Test Python calculation
+TYPE: exact
+TAGS: python, math
+INPUT: print(10 * 5)
+EXPECTED: 50
+
+### TEST: Python String Manipulation
+DESCRIPTION: Test string upper case
+TYPE: exact
+TAGS: python, string
+INPUT: print('hello world'.upper())
+EXPECTED: HELLO WORLD
+
+### TEST: Python List Length
+DESCRIPTION: Test list operations
+TYPE: exact
+TAGS: python, list
+INPUT: print(len([1, 2, 3, 4, 5]))
+EXPECTED: 5
+
+### TEST: Python Boolean
+DESCRIPTION: Test boolean expression
+TYPE: exact
+TAGS: python, logic
+INPUT: print(5 > 3)
+EXPECTED: True
+
+### TEST: Echo Test
+DESCRIPTION: Test simple echo command
+TYPE: exact
+TAGS: string, basic
+INPUT: Hello World
+EXPECTED: Hello World
+
+### TEST: Echo Number
+DESCRIPTION: Echo a number
+TYPE: exact
+TAGS: string, basic
+INPUT: 42
+EXPECTED: 42
+
+### TEST: Contains Test
+DESCRIPTION: Test partial match
+TYPE: contains
+TAGS: string, partial
+INPUT: The quick brown fox jumps over the lazy dog
+EXPECTED: quick brown fox
+
+### TEST: Uppercase Test
+DESCRIPTION: Test uppercase conversion
+TYPE: contains
+TAGS: string, transform
+INPUT: hello
+EXPECTED: hello
+
+### TEST: JSON Test
+DESCRIPTION: Test JSON parsing
+TYPE: json
+TAGS: json, data
+INPUT: {"name": "test", "value": 123}
+EXPECTED: {"name": "test", "value": 123}
+
+### TEST: JSON Array Test
+DESCRIPTION: Test JSON array
+TYPE: json
+TAGS: json, array
+INPUT: [1, 2, 3, 4, 5]
+EXPECTED: [1, 2, 3, 4, 5]
+
+### TEST: Multi Word String
+DESCRIPTION: Test string with spaces
+TYPE: exact
+TAGS: string, spaces
+INPUT: This is a test string
+EXPECTED: This is a test string
